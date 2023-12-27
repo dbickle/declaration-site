@@ -63,6 +63,12 @@
         section.imagem {
             background-color: rgb(63, 55, 55);
             color: white;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.705);
+            background-attachment: fixed;
+        }
+
+        section > p {
+            padding-bottom: 2em;
         }
 
         section.imagem > p {
@@ -70,6 +76,19 @@
             padding: 5px;
             background-color: rgba(0, 0, 0, 0.774);
             width: 400px;
+            text-shadow: 1px 1px 0px black;
+        }
+
+        section#img01 {
+            background-image: url(img/mayane-1.jpeg);
+            background-position: center center;
+            background-size: cover;
+        }
+
+        section#img02 {
+            background-image: url(img/mayane-2.jpeg);
+            background-position: center center;
+            background-size: cover;
         }
 
     </style>
@@ -89,7 +108,7 @@
         </p>
     </section>
 
-    <section class="imagem">
+    <section class="imagem" id="img01">
         <p>
             Você fala pra eu nunca te esquecer <br>
             Mas olha só pra você <br>
@@ -107,13 +126,16 @@
         </p>
     </section>
 
-    <section class="imagem">
+    <section class="imagem" id="img02">
         <p>
             Tenho você por perto <br>
             Nunca me senti tão completo <br>
             Nunca me senti tão seguro <br>
             Perco o medo do fim do mundo <br>
         </p>
+    </section>
+
+    <section class="normal">
         <p>
             Tenho você por perto <br>
             Me sinto caminhando certo <br>
